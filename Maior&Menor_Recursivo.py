@@ -1,7 +1,5 @@
 def numInt(lista, op):
     if (op == 1):
-        if (len(lista) == 0):
-            return 0
         if(len(lista) == 1):
             return lista[0]
         elif (lista[0] > numInt(lista[1:], op)):
@@ -10,8 +8,6 @@ def numInt(lista, op):
             return numInt(lista[1:], op)
         return maior
     elif (op == 2):
-        if (len(lista) == 0):
-            return 0
         if (len(lista) == 1):
             return lista[0]
         elif (lista[0] < numInt(lista[1:], op)):
@@ -30,7 +26,7 @@ while (op != 0):
     if (op == 1):
         msg = "O maior numero é "
     elif (op == 2):
-        msg = "O maior numero é "
+        msg = "O menor numero é "
     elif (op == 0):
         print ("Fim do programa")
         continue
